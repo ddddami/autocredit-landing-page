@@ -7,13 +7,49 @@
     <title>Document</title>
   </head>
   <body>
-    <h1>
-      Payment Made <br />
-      <span class="color-primary">Easy & Instant</span>
-    </h1>
-    <p>
-      The easiest way to accept automated instant payments without unnecessary
-      charges for smart businesses.
-    </p>
+    <nav class="nav collapsible collapsible--expanded">
+      <img src="./images/logo.svg" alt="" /><svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 20 20"
+        fill="currentColor"
+        class="nav__toggler"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10zm0 5.25a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75a.75.75 0 01-.75-.75z"
+          clip-rule="evenodd"
+        />
+      </svg>
+      <ul class="list nav__list collapsible__content">
+        <li class="nav__item"><a class="link" href="#">Home</a></li>
+        <li class="nav__item"><a class="link" href="#">Developer</a></li>
+        <li class="nav__item"><a class="link" href="#">Pricing</a></li>
+        <li class="nav__item"><a class="link" href="#">Support</a></li>
+        <li class="nav__item">
+          <button class="btn btn--primary shadow">Free Account</button>
+        </li>
+      </ul>
+    </nav>
+
+    <section class="hero-intro">
+      <div class="hero-intro__content">
+        <div class="hero-intro__heading">
+          <h1>
+            Payment Made <br />
+            <span class="color-primary">Easy & Instant</span>
+          </h1>
+          <p>
+            The easiest way to accept automated instant payments without
+            unnecessary charges for smart businesses.
+          </p>
+          <div class="hero-intro__buttons"></div>
+          <button class="btn btn--primary shadow">
+            Create <span class="text-accent">Free</span> Account
+          </button>
+          <button class="btn btn--secondary">View Demo</button>
+        </div>
+        <img src="./images/hero-img.png" alt="A satisfied, smiling customer" />
+      </div>
+    </section>
   </body>
 </html>

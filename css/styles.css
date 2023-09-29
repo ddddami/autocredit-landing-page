@@ -22,6 +22,7 @@ body {
   color: var(--color-text);
   font-size: 1.8rem;
   line-height: 1.5;
+  background-color: #f5f5ff;
 }
 h1,
 h2,
@@ -95,7 +96,7 @@ p {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 0 1.2rem;
+  padding: 5rem 15rem 5rem 12rem;
 }
 .nav__list {
   width: 100%;
@@ -117,7 +118,7 @@ p {
   color: var(--color-text);
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 930px) {
   .nav__list {
     display: flex;
     width: auto;
@@ -126,6 +127,9 @@ p {
   .nav__toggler {
     display: none;
   }
+}
+.nav .shadow {
+  box-shadow: 5px 5px 5px rgba(60, 60, 189, 0.25);
 }
 
 /* Collapsible */
@@ -138,4 +142,41 @@ p {
 .collapsible--expanded .collapsible__content {
   opacity: 1;
   max-height: 100vh;
+}
+
+/* Hero (INtro) */
+.hero-intro {
+  background: url(../images//intro-bg.png) no-repeat;
+  background-position: 0px -90px;
+  background-size: cover;
+  height: 100%;
+  clip-path: polygon(0 0, 100% 0, 100% 95%, 0% 100%);
+}
+
+.hero-intro__content {
+  padding: 0 9rem;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero-intro__content img {
+  display: none;
+  max-width: 50%;
+}
+@media screen and (min-width: 930px) {
+  .hero-intro__content {
+    padding: 0 15rem 0 12rem;
+  }
+  .hero-intro__content img {
+    display: block;
+  }
+}
+.hero-intro__content .btn--primary {
+  margin-right: 1rem;
+  margin-bottom: 0.6rem;
+}
+
+.hero-intro__buttons {
+  margin-bottom: 3rem;
 }
