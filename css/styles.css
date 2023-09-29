@@ -184,3 +184,17 @@ p {
 .hero-intro__buttons {
   margin-bottom: 3rem;
 }
+
+.chat {
+  position: fixed;
+  bottom: 10px;
+  right: 15px;
+  background-color: var(--color-primary);
+  border-radius: 8px 34px 34px;
+  box-shadow: 0 5px 4px 0 rgba(0, 0, 0, 0.26);
+  padding: 1rem 1.3rem;
+}
+.chat .icon {
+  fill: white;
+  width: 30px;
+}
