@@ -46,8 +46,39 @@ p {
   margin-top: 0;
   font-size: 2.2rem;
   line-height: 1.7;
+  max-width: 40ch;
 }
 
 .color-primary {
   color: var(--color-primary);
+}
+
+.text-accent {
+  color: var(--color-accent);
+}
+
+/* Buttons */
+.btn {
+  border-radius: 6px;
+  border: 0;
+  cursor: pointer;
+  font-size: 1.6rem;
+  font-weight: 600;
+  outline: 0;
+  padding: 1.5rem 4vw;
+  white-space: nowrap;
+}
+
+.btn--primary {
+  background-color: var(--color-primary);
+  color: #fff;
+}
+
+.btn--secondary {
+  background-color: var(--color-secondary);
+  color: #fff;
+}
+
+.shadow {
+  box-shadow: 10px 10px 20px rgba(60, 60, 189, 0.25);
 }
