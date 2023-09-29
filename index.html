@@ -11,6 +11,7 @@
       sizes="44x44"
       href="./images/favicon.svg"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <nav class="nav collapsible">
@@ -42,11 +43,11 @@
     <section class="hero-intro">
       <div class="hero-intro__content">
         <div class="hero-intro__heading">
-          <h1>
+          <h1 data-aos="fade-up">
             Payment Made <br />
             <span class="color-primary">Easy & Instant</span>
           </h1>
-          <p>
+          <p data-aos="fade-right">
             The easiest way to accept automated instant payments without
             unnecessary charges for smart businesses.
           </p>
@@ -73,5 +74,9 @@
       </button>
     </section>
     <script type="module" src="./js/index.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({ duration: 500 });
+    </script>
   </body>
 </html>
