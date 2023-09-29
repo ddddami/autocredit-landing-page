@@ -119,6 +119,10 @@ p {
 }
 
 @media screen and (min-width: 930px) {
+  .collapsible__content {
+    opacity: 1 !important;
+    max-height: 100vh !important;
+  }
   .nav__list {
     display: flex;
     width: auto;
